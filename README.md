@@ -1,6 +1,8 @@
 ### Sudoku-PD
 
-A sudoku game for the Playdate console, by Panic.
+A sudoku game for the Playdate console, by Panic. You will need to either sideload the game onto
+your Playdate (https://help.play.date/games/sideloading/), or use the simulator included with the 
+SDK here (https://play.date/dev/)
 
 #### Planned features
 
