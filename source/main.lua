@@ -62,7 +62,7 @@ class('Grid').extends()
 	end
 
 	function Grid:make_image()
-		self.grid_image = gfx.image.new(self.grid_width, self.grid_height)
+		self.grid_image = gfx.image.new(self.grid_width, self.grid_height, gfx.kColorWhite)
 		gfx.pushContext(self.grid_image)
 			gfx.setColor(gfx.kColorBlack)
 
@@ -137,7 +137,7 @@ class('Grid').extends()
       gfx.drawLine(bx1,by2, bx2,by2)
       gfx.drawLine(bx2,by1, bx2,by2)
       gfx.setLineWidth(1)
-      gfx.setColor(gfx.kColorBlack)
+      gfx.setColor(gfx.kColorWhite)
       gfx.drawLine(bx1,by1, bx2,by1)
       gfx.drawLine(bx1,by1, bx1,by2)
       gfx.drawLine(bx1,by2, bx2,by2)
@@ -152,7 +152,7 @@ class('Grid').extends()
     if self.box_y == 1 then
       return
     end
-    -- erase the previous box/
+    -- erase the previous box
     self:erase_box()
     self.box_y -= 1
   end
